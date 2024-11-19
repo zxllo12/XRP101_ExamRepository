@@ -25,6 +25,14 @@ public class TurretController : MonoBehaviour
         }
     }
 
+    private void OnTriggerExit(Collider other) // Trigger 범위 바깥으로 플레이어가 나가면 발사 중지
+    {
+        if (other.CompareTag("Player"))
+        {
+            StopCoroutine(_coroutine);
+        }
+    }
+
     private void Init()
     {
         _coroutine = null;

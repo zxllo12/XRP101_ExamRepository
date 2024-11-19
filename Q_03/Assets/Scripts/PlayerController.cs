@@ -24,6 +24,8 @@ public class PlayerController : MonoBehaviour
     {
         Hp -= damage;
 
+        Debug.Log($"{Hp}");
+
         if (Hp <= 0)
         {
             Die();
