@@ -26,7 +26,7 @@ public class BulletController : PooledBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            other
+            other.transform.parent // 캡슐 콜라이더가 Body에 있어서 NullReferenceException 발생
                 .GetComponent<PlayerController>()
                 .TakeHit(_damageValue);
         }
