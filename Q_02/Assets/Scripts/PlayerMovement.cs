@@ -29,6 +29,6 @@ public class PlayerMovement : MonoBehaviour
 
         if (direction == Vector3.zero) return;
         
-        transform.Translate(_status.MoveSpeed * Time.deltaTime * direction);
+        transform.Translate(direction.normalized  * _status.MoveSpeed * Time.deltaTime, Space.World); // normalized가 없어서 대각선 이동이 빨라짐
     }
 }
