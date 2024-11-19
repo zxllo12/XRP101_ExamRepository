@@ -13,3 +13,4 @@
 ## 답안
 - public float MoveSpeed // StackOverflowException 발생 MoveSpeed를 get해서 set을 반복하여 일어나는 걸로 확인됨 저장할 변수를 만들어서 StackOverflowException 해결
 - normalized가 없어서 대각선 이동이 빨라짐
+
