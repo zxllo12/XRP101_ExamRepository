@@ -15,3 +15,4 @@
 - public Vector3 SetPoint { get; set; } // set이 private 으로 설정되어 CubeManager에서 변경 불가능
 - SetCubePosition(3, 0, 3); // 초기화가 되기전에 포지션을 설정해서 어웨이크에서 스타트로 내림
 - _cubeSetPoint = _cubeController.SetPoint; // SetCubePosition이 나중에 호출되니 주석처리
+
