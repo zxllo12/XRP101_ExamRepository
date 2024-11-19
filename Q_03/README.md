@@ -21,4 +21,6 @@
 제시된 프로젝트에서 발생하는 `문제들을 모두 서술`하고 올바르게 동작하도록 `소스코드를 개선`하시오.
 
 ## 답안
-- 
+- 플레이어와 불렛에 리지드바디가 빠져있다.
+- 캡슐 콜라이더가 Body에 있어서 NullReferenceException 발생 transform.parent로 호출
+- OnTriggerExit 함수 추가
