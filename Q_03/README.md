@@ -24,3 +24,4 @@
 - 플레이어와 불렛에 리지드바디가 빠져있다.
 - 캡슐 콜라이더가 Body에 있어서 NullReferenceException 발생 transform.parent로 호출
 - OnTriggerExit 함수 추가
+
